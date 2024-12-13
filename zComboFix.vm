@@ -1,7 +1,7 @@
 [BEGINVDF]
 Comment=Enable combos for NPCs in Gothic 1 and Gothic 2
 BaseDir=.\
-VDFName=.\zComboFix.vdf
+VDFName=..\..\..\..\Data\zComboFix.vdf
 
 [FILES]
 ; Modular resources
@@ -45,6 +45,9 @@ _work\Data\Scripts\* -r
 *.bat
 *.cfg
 .*
+
+; Exclude exe files
+*.exe
 
 [INCLUDE]
 ; License and README
