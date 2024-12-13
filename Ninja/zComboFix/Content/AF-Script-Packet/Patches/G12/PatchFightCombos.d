@@ -40,7 +40,7 @@ func void Init_Global () {
 
 */
 
-func void _hook_oCNpc_EV_AttackForward_HitCombo_Npc () {
+func void Ninja_zComboFix__hook_oCNpc_EV_AttackForward_HitCombo_Npc () {
 	if (!ECX) { return; };
 	var oCAniCtrl_Human aniCtrl; aniCtrl = _^ (ECX);
 
@@ -48,7 +48,7 @@ func void _hook_oCNpc_EV_AttackForward_HitCombo_Npc () {
 	var oCNpc slf; slf = _^ (aniCtrl.npc);
 
 	//If Npc is in combo animation
-	if (oCAniCtrl_Human_IsInCombo (ECX)) {
+	if (Ninja_zComboFix_oCAniCtrl_Human_IsInCombo (ECX)) {
 		//Some fight styles don't have combos - if we would enable combo - Npc would freeze in their animation
 		//Check if combo can be enabled
 		if (aniCtrl.comboNr + 1 < aniCtrl.comboMax) {
@@ -59,7 +59,7 @@ func void _hook_oCNpc_EV_AttackForward_HitCombo_Npc () {
 	};
 };
 
-func void G12_PatchFightCombos () {
+func void Ninja_zComboFix_G12_PatchFightCombos () {
 	const int once = 0;
 	if (!once) {
 
@@ -85,7 +85,7 @@ func void G12_PatchFightCombos () {
 		//0074ff81
 		const int oCNpc__EV_AttackForward_HitCombo_Npc_G2 = 7667585;
 
-		HookEngine (MEMINT_SwitchG1G2 (oCNpc__EV_AttackForward_HitCombo_Npc_G1, oCNpc__EV_AttackForward_HitCombo_Npc_G2), 5, "_hook_oCNpc_EV_AttackForward_HitCombo_Npc");
+		HookEngine (MEMINT_SwitchG1G2 (oCNpc__EV_AttackForward_HitCombo_Npc_G1, oCNpc__EV_AttackForward_HitCombo_Npc_G2), 5, "Ninja_zComboFix__hook_oCNpc_EV_AttackForward_HitCombo_Npc");
 
 		once = 1;
 	};

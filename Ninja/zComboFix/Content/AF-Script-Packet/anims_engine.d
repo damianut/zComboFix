@@ -1,4 +1,4 @@
-func int oCAniCtrl_Human_IsInCombo (var int aniCtrlPtr) {
+func int Ninja_zComboFix_oCAniCtrl_Human_IsInCombo (var int aniCtrlPtr) {
 	//0x00628350 public: int __thiscall oCAniCtrl_Human::IsInCombo(void)
 	const int oCAniCtrl_Human__IsInCombo_G1 = 6456144;
 
