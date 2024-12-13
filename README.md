@@ -9,7 +9,11 @@
 <!-- [![Steam Gothic 1](https://img.shields.io/badge/steam-Gothic%201-2a3f5a?logo=steam&labelColor=1b2838)](https://steamcommunity.com/sharedfiles/filedetails/?id=XXXXXXXXXX) -->
 <!-- [![Steam Gothic 2](https://img.shields.io/badge/steam-Gothic%202-2a3f5a?logo=steam&labelColor=1b2838)](https://steamcommunity.com/sharedfiles/filedetails/?id=XXXXXXXXXX) -->
 
-Enable combos for NPCs in Gothic 1 and Gothic 2
+Enable combos for NPCs in Gothic 1 and Gothic 2.
+
+The combos we could have since 2001, if few lines of a code would be written differently. In case of Gothic 1, a combo is assigned to a master fight style, but is not used by NPCs. In Gothic 2 was even not assigned.
+
+Patch contains a code from [AFSP](https://github.com/Bad-Scientists/AF-Script-Packet),
 
 This is a modular modification (a.k.a. patch or add-on) that can be installed and uninstalled at any time and is virtually compatible with any modification.
 It supports <kbd>Gothic 1</kbd> and <kbd>Gothic II: NotR</kbd>.
