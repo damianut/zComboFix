@@ -3,4 +3,6 @@ LeGo
 
 // LIST YOUR FILES HERE
 
+Content\AF-Script-Packet\anims_engine.d
+Content\AF-Script-Packet\Patches\G12\PatchFightCombos.d
 Content\init.d
